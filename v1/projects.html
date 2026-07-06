@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+   <script>
+      $(function() {
+         $("#includeHtml").load("../nav.html");
+      });
+   </script>
+    <title>Projects</title>
+</head>
+<body>
+    <div id="includeHtml"></div>
+    <p class="mys" style="margin-top:130px;">Projects</p>
+
+
+
+    <div class="mywork" id="My-Work">
+        <script>
+          const projects = [
+            {
+              id:1,
+              name:"Property Rental",
+              img:"./images/Screenshot 2025-07-27 114548.png",
+              live:"https://property-rental-kohl.vercel.app/",
+              code:"https://github.com/gana-18/property-rental"
+            },
+            {
+              id:1,
+              name:"Meme Gallery - Infinite Scroll",
+              img:"./images/Screenshot 2025-07-27 174921.png",
+              live:"https://meme-gallery-nine.vercel.app/",
+              code:"https://github.com/gana-18/meme-gallery-nextjs"
+            },
+            {
+              id:1,
+              name:"InsideCode-Community Blog",
+              img:"./images/Screenshot 2023-09-29 191318.png",
+              live:"https://community-blogging.onrender.com/",
+              code:"https://github.com/gana-18/community-blogging"
+            },
+          {
+              id:4,
+              name:"Finance Tracker",
+              img:"./images/Screenshot 2023-06-27 152917.png",
+              live:"https://gana-18.github.io/finance-tracker/",
+              code:"https://github.com/gana-18/finance-tracker"
+            },
+            {
+              id:3,
+              name:"Climate-Webapp",
+              img:"./images/Screenshot 2023-03-19 123535.png",
+              live:"https://github.com/gana-18/Climate-webapp",
+              code:"https://github.com/gana-18/Climate-webapp",
+            },
+            {
+              id:2,
+              name:"StoryBook",
+              img:"./images/Screenshot 2023-03-19 123736.png",
+              live:"https://storybooks-app.up.railway.app/",
+              code:"https://github.com/gana-18/storybooks",
+            },
+            {
+              id:5,
+              name:"Restaurant",
+              img:"./images/rest.jpg",
+              live:"https://gana-18.github.io/restaurant/",
+              code:"https://github.com/gana-18/restaurant",
+            },
+            {
+              id:6,
+              name:"Tip-calculator",
+              img:"./images/calc.jpg",
+              live:"https://gana-18.github.io/tip-calculator/",
+              code:"https://github.com/gana-18/tip-calculator",
+            },
+            {
+              id:7,    
+              name:"Link saver-Chrome Extension",
+              img:"./images/chrome.jpg",
+              live:"https://github.com/gana-18/chrome-extension",
+              code:"https://github.com/gana-18/chrome-extension",
+            },
+            {
+              id:8,
+              name:"BlackJack Game",
+              img:"./images/Screenshot 2022-06-26 191314.jpg",
+              live:"https://gana-18.github.io/BlackJack-Game/",
+              code:"https://github.com/gana-18/BlackJack-Game",
+            },
+            {
+              id:9,
+              name:"Ping Pong",
+              img:"./images/Screenshot 2022-06-26 191602.jpg",
+              live:"https://gana-18.github.io/BlackJack-Game/",
+              code:"https://gana-18.github.io/BlackJack-Game/",
+            },
+            {
+              id:10,
+              name:"Blog",
+              img:"./images/Screenshot 2022-06-26 191503.jpg",
+              live:"https://gana-18.github.io/Best-Websites-To-Learn-Front-End/",
+              code:"https://github.com/gana-18/Best-Websites-To-Learn-Front-End",
+            },
+          ];
+      
+          // Loop through the projects array and generate card template for each project
+          for (let i = 0; i < projects.length; i++) {
+            const project = projects[i];
+            const card = `
+        <div class="card">
+            <img class="img2" src="${project.img}" alt="${project.name}">
+          <div class="ptext">
+            <h2 class="text-el">${project.name}</h2>
+            <div class="underline"></div>
+          </div>
+          <div class="links">
+            <div>
+                <a class="codep" href="${project.code}" target="_blank"><button class="plink">View
+                        code</button></a>
+            </div>
+            <div>
+                <a class="live" href="${project.live}" target="_blank"><button class="plink">View
+                        page</button></a>
+            </div>
+           </div>
+        </div>
+
+            `;
+            document.write(card);
+          }
+        </script>
+    </div>
+</body>
+</html>
